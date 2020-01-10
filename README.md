@@ -45,21 +45,24 @@ $ python m_DTM.py
 For personally project setting, you can follow the instruction below to adjust parameters involved.
 
 ##### Parameters
--unit : make time slice by which unit, string type, default by 'year', can be choices in 'year', 'month', and 'day'
--tp : time period of the setting unit, int type, default by 1
--min_num_docs : throw the time period if the number of document in it is less than min_num_docs, int type, default by 100
--min_num_words : throw the document if the number of words in it is less than min_num_words, int type, default is 30
-               
--vm : choices in 'topk', 'all', and 'highlow'
-  -topk, reserve k words with highest frequency in data, if you set vm as topk, you will also need to set parameter '-reserve_vocab' which indicates the number K of vocabulary size which is default by 2000
-  -all, by setting '-vm' as 'all', you will reserve all words from data
-  -highlow, by setting '-vm' as 'highlow', you must also set parameters of '-highlow\_high' and '-highlow\_low' as these two number is the removed percentage of high and low frequency words 
+- unit : make time slice by which unit, string type, default by 'year', can be choices in 'year', 'month', and 'day'
 
--epochs : number of training iterations when training the model
--print_every : print losses on screen for every print_every epochs
--save_every : save losses in log.txt for every save_every epochs
--batch_size : maximum batch size for training
--early_stop : stop iteration in advance when the loss reach a particular threshold
+- tp : time period of the setting unit, int type, default by 1
+
+- min_num_docs : throw the time period if the number of document in it is less than min_num_docs, int type, default by 100
+
+- min_num_words : throw the document if the number of words in it is less than min_num_words, int type, default is 30
+               
+- vm : choices in 'topk', 'all', and 'highlow'
+  - topk, reserve k words with highest frequency in data, if you set vm as topk, you will also need to set parameter '-reserve_vocab' which indicates the number K of vocabulary size which is default by 2000
+  - all, by setting '-vm' as 'all', you will reserve all words from data
+  - highlow, by setting '-vm' as 'highlow', you must also set parameters of '-highlow\_high' and '-highlow\_low' as these two number is the removed percentage of high and low frequency words 
+
+- epochs : number of training iterations when training the model
+- print_every : print losses on screen for every print_every epochs
+- save_every : save losses in log.txt for every save_every epochs
+- batch_size : maximum batch size for training
+- early_stop : stop iteration in advance when the loss reach a particular threshold
 
 
 After running successfully you will get result file in topic_evo.txt with content as below
@@ -73,7 +76,7 @@ After running successfully you will get result file in topic_evo.txt with conten
 
 ![image](https://github.com/starry9t/TopicEvolution/blob/master/image/result_03.png)
 
-## Visualization
+## [Visualization](https://blpxspg.github.io/visualisation/index.html)
 
 (
 
